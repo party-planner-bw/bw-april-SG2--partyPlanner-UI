@@ -138,12 +138,6 @@ table {
   height: 100px;
   background-color: black;
 }
-@media (max-width: 500px;) {
-  .nav_container {
-    display: flex;
-    flex-direction: column;
-  }
-}
 header {
   display: flex;
   justify-items: center;
@@ -157,8 +151,13 @@ header nav {
   margin-left: 600px;
   justify-content: space-evenly;
 }
+@media (max-width:500px) {
+  header nav {
+    margin-left: 200px;
+  }
+}
 header nav a {
-  margin-right: 40px;
+  margin-right: 20px;
   font-size: 1.5rem;
   color: #FFFFFF;
   text-decoration: none;
@@ -190,9 +189,76 @@ header nav a {
   background-color: greenyellow;
   width: 20%;
 }
+.tabs-heading {
+  color: yellow;
+  font-size: 3rem;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.tabs {
+  margin-left: 650px;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 85%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+  background-color: white;
+  width: 15%;
+}
+.tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: greenyellow;
+  border-right: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: green;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid greenyellow;
+  background-color: blue;
+  color: purple;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: black;
+}
 body {
   box-sizing: border-box;
   min-width: 300px;
   margin: 0;
+}
+@media (max-width:500px) {
+  body {
+    max-width: 500px;
+  }
+}
+body .page_container {
   background-image: url('../images/bg_image.jpg');
+}
+@media (max-width:500px) {
+  body .page_container {
+    background-image: url('../images/mobile_bg.jpg');
+  }
 }
