@@ -144,10 +144,21 @@ h1 {
   padding-left: 1%;
   font-family: 'Lato', sans-serif;
 }
+@media (max-width: 500px) {
+  h1 {
+    padding-left: 31%;
+  }
+}
 h2,
 h3 {
   font-size: 3rem;
   font-family: 'Lato', sans-serif;
+}
+@media (max-width: 500px) {
+  h2,
+  h3 {
+    font-size: 2.1rem;
+  }
 }
 p {
   font-size: 1.8rem;
@@ -164,29 +175,19 @@ header {
   padding: 20px 0;
   border-bottom: 1px solid lightgrey;
 }
-header .top-btns {
-  width: 18%;
-  display: flex;
-  margin-right: 2%;
-}
-header .top-btns button {
-  border-radius: 4px;
-  height: 39px;
-  width: 45%;
-  margin-right: 4%;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
-  border: 1px solid #242424;
-  color: white;
-  cursor: pointer;
-  background-color: #242424;
-}
-header .top-btns button:hover {
-  background: white;
-  color: #242424;
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+  }
 }
 header nav {
   padding-top: 10px;
+}
+@media (max-width: 500px) {
+  header nav {
+    padding-top: 33px;
+    padding-left: 7%;
+  }
 }
 header nav a {
   margin-left: 61px;
@@ -195,30 +196,29 @@ header nav a {
   color: black;
   font-family: 'Lato', sans-serif;
 }
-.top-content {
+@media (max-width: 500px) {
+  header nav a {
+    margin-left: 50px;
+  }
+}
+.top-btns {
+  width: 18%;
   display: flex;
-  flex-direction: row-reverse;
-  background-color: #F4F4F4;
 }
-.top-content .top-img {
-  width: 93%;
-  padding: 21px;
+@media (max-width: 500px) {
+  .top-btns {
+    width: 100%;
+    padding-top: 18px;
+    margin-right: 0;
+    padding-left: 11%;
+    flex-direction: column;
+  }
 }
-.top-content h2 {
-  margin-left: 24%;
-}
-.top-content .top-txt {
-  padding: 133px 0px 0 46px;
-  line-height: 34px;
-}
-.top-content button {
-  display: block;
-  margin: 0 auto;
-  margin-top: 15px;
+.top-btns button {
   border-radius: 4px;
   height: 39px;
-  width: 45%;
-  margin-right: 34%;
+  width: 47%;
+  margin-right: 3%;
   font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
   border: 1px solid #242424;
@@ -226,13 +226,114 @@ header nav a {
   cursor: pointer;
   background-color: #242424;
 }
-.top-content button:hover {
+.top-btns button:hover {
   background: white;
   color: #242424;
+}
+@media (max-width: 500px) {
+  .top-btns button {
+    margin: 18px 0;
+    height: 64px;
+    width: 90%;
+  }
+}
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  padding: 51px 0;
+  border-top: 1px solid lightgrey;
+}
+@media (max-width: 500px) {
+  .bottom-nav {
+    margin-right: 9%;
+  }
+}
+.bottom-nav a {
+  margin-left: 61px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  font-family: 'Lato', sans-serif;
+}
+@media (max-width: 500px) {
+  .bottom-nav a {
+    font-size: 2.6;
+  }
+}
+.top-content {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #F4F4F4;
+}
+@media (max-width: 500px) {
+  .top-content {
+    flex-direction: column;
+  }
+}
+.top-content .top-img {
+  width: 93%;
+  padding: 21px;
+}
+@media (max-width: 500px) {
+  .top-content .top-img {
+    width: 100%;
+    padding: 0;
+  }
+}
+.top-content .top-txt {
+  padding: 133px 0px 0 46px;
+  line-height: 34px;
+}
+@media (max-width: 500px) {
+  .top-content .top-txt {
+    padding: 16px 20px 27px 29px;
+  }
+}
+.top-content .top-txt h2 {
+  margin-left: 24%;
+}
+@media (max-width: 500px) {
+  .top-content .top-txt h2 {
+    padding-bottom: 7px;
+    margin-left: 33%;
+  }
+}
+.top-content .top-txt button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 4px;
+  height: 39px;
+  width: 47%;
+  margin-right: 3%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  border: 1px solid #242424;
+  color: white;
+  cursor: pointer;
+  background-color: #242424;
+  width: 57%;
+  margin-right: 26%;
+}
+.top-content .top-txt button:hover {
+  background: white;
+  color: #242424;
+}
+@media (max-width: 500px) {
+  .top-content .top-txt button {
+    width: 64%;
+    height: 59px;
+    margin-right: 17%;
+  }
 }
 .int-text {
   line-height: 38px;
   margin: 41px 0 34px 20%;
+}
+@media (max-width: 500px) {
+  .int-text {
+    margin: 19px 0 24px 4%;
+  }
 }
 .features {
   display: flex;
@@ -243,16 +344,37 @@ header nav a {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .features .feat-one {
+    flex-direction: column;
+  }
+}
 .features .feat-one .mid-img {
   padding-right: 3%;
   width: 431%;
 }
+@media (max-width: 500px) {
+  .features .feat-one .mid-img {
+    width: 100%;
+    padding-right: 0;
+  }
+}
 .features .feat-one .one-txt {
   padding-top: 72px;
+}
+@media (max-width: 500px) {
+  .features .feat-one .one-txt {
+    padding: 20px 4%;
+  }
 }
 .features .feat-one .one-txt h3 {
   line-height: 54px;
   padding-left: 21%;
+}
+@media (max-width: 500px) {
+  .features .feat-one .one-txt h3 {
+    padding-left: 30%;
+  }
 }
 .features .feat-one .one-txt p {
   line-height: 27px;
@@ -261,9 +383,19 @@ header nav a {
   display: flex;
   flex-direction: row-reverse;
 }
+@media (max-width: 500px) {
+  .features .feat-two {
+    flex-direction: column;
+  }
+}
 .features .feat-two .two-txt {
   background: #ECECEC;
   padding: 43px 27px 0px 50px;
+}
+@media (max-width: 500px) {
+  .features .feat-two .two-txt {
+    padding: 28px 4%;
+  }
 }
 .features .feat-two .two-txt h3 {
   padding-left: 40%;
@@ -276,11 +408,26 @@ header nav a {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .features .feat-three {
+    flex-direction: column;
+  }
+}
 .features .feat-three .three-img {
   width: 429%;
 }
+@media (max-width: 500px) {
+  .features .feat-three .three-img {
+    width: 100%;
+  }
+}
 .features .feat-three .three-txt {
   padding: 67px 0 0 32px;
+}
+@media (max-width: 500px) {
+  .features .feat-three .three-txt {
+    padding: 23px 4%;
+  }
 }
 .features .feat-three .three-txt h3 {
   line-height: 56px;
@@ -293,12 +440,27 @@ header nav a {
   display: flex;
   flex-direction: row-reverse;
 }
+@media (max-width: 500px) {
+  .features .feat-four {
+    flex-direction: column;
+  }
+}
 .features .feat-four .four-img {
   width: 311%;
+}
+@media (max-width: 500px) {
+  .features .feat-four .four-img {
+    width: 100%;
+  }
 }
 .features .feat-four .four-txt {
   background: #ECECEC;
   padding: 47px 19px 0 42px;
+}
+@media (max-width: 500px) {
+  .features .feat-four .four-txt {
+    padding: 23px 4%;
+  }
 }
 .features .feat-four .four-txt h3 {
   padding-bottom: 18px;
