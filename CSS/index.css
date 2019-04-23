@@ -154,7 +154,8 @@ table {
 }
 @media (max-width:500px) {
   .logo_container {
-    width: 200px;
+    text-align: center;
+    padding: 0 30px;
     margin-right: 150px;
   }
 }
@@ -162,9 +163,15 @@ table {
   font-size: 3rem;
   color: #e7ebf7;
 }
+@media (max-width:500px) {
+  .logo_container h1 {
+    font-size: 1.9rem;
+  }
+}
 .nav_container {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   width: 500px;
   padding-right: 20px;
 }
@@ -181,6 +188,8 @@ table {
 }
 @media (max-width:500px) {
   .nav_container nav a {
+    padding-top: 40px;
+    font-size: 1.3rem;
     width: 450px;
   }
 }
@@ -253,7 +262,7 @@ table {
 }
 .tabs {
   width: 50%;
-  margin-left: 350px;
+  margin-left: 370px;
 }
 @media (max-width:500px) {
   .tabs {
