@@ -152,6 +152,12 @@ p {
   font-size: 1.8rem;
   font-family: 'Slabo 27px', serif;
 }
+.main-page {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F4F4F4;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -189,28 +195,22 @@ header nav a {
   color: black;
   font-family: 'Lato', sans-serif;
 }
-.main-page {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #F4F4F4;
-}
-.main-page .top-content {
+.top-content {
   display: flex;
   flex-direction: row-reverse;
 }
-.main-page .top-content .top-img {
+.top-content .top-img {
   width: 93%;
   padding: 21px;
 }
-.main-page .top-content h2 {
+.top-content h2 {
   margin-left: 24%;
 }
-.main-page .top-content .top-txt {
+.top-content .top-txt {
   padding: 133px 0px 0 46px;
   line-height: 43px;
 }
-.main-page .top-content button {
+.top-content button {
   display: block;
   margin: 0 auto;
   margin-top: 15px;
@@ -225,20 +225,7 @@ header nav a {
   cursor: pointer;
   background-color: #242424;
 }
-.main-page .top-content button:hover {
+.top-content button:hover {
   background: white;
   color: #242424;
-}
-.main-page .int-text {
-  line-height: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 17px;
-}
-.features {
-  display: flex;
-}
-.features .feat-one {
-  justify-content: center;
 }
