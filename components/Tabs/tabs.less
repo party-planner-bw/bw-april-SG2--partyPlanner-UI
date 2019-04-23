@@ -1,5 +1,5 @@
 .tabs-heading {
-  color: yellow;
+  color: #E7EBF7;
   font-size: 3rem;
   margin: 20px;
   display: flex;
@@ -25,11 +25,14 @@
     .tabs-item {
       display: none; 
       width: 100%;
-      background-color: greenyellow;
       padding: 40px 20px 0 20px;
       .tabs-item-title {
+        text-align: center;
         font-size: 24px;
         font-weight: bold;
+        @media @mobile {
+          display: none;
+        }
         
       }
     }
@@ -38,6 +41,10 @@
       background-image: url('../images/header_image.jpg');
       background-repeat: none;
       background-size: 750px 300px;
+      @media @mobile {
+        background-size: 378px 300px;
+        
+      }
      
     }
   }
@@ -55,13 +62,13 @@
       color: white;
       cursor: pointer;
       &:hover {
-        background-color: @green;
+        background-color: black;
       }
     }
     .tabs-link-selected {
       z-index: 2;
       border-right: 1px solid @splash;
-      background-color: #e7ebf7;
+      background-color: #E7EBF7;
       color:black;
       &:hover {
         background-color: white;
@@ -73,4 +80,7 @@
     margin: 0 auto;
     text-align: center;
       width: 50%;
+      @media @mobile {
+        width: 80%;
+      }
   }
