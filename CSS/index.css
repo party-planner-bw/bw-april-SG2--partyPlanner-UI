@@ -136,10 +136,8 @@ table {
 }
 .head_container {
   width: 100%;
-  position: absolute;
-  top: 10px;
   height: 100px;
-  background-color: black;
+  background-color: #520d52;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -150,7 +148,6 @@ table {
   }
 }
 .logo_container {
-  border: 2px solid red;
   display: flex;
   width: 500px;
   margin-right: 500px;
@@ -167,7 +164,6 @@ table {
   height: 100px;
 }
 .nav_container {
-  border: 2px solid red;
   display: flex;
   justify-content: flex-end;
   width: 500px;
@@ -178,7 +174,7 @@ table {
   }
 }
 .nav_container nav a {
-  margin-left: 15px;
+  margin-left: 20px;
   font-size: 1.3rem;
   color: #FFFFFF;
   text-decoration: none;
@@ -186,7 +182,6 @@ table {
 @media (max-width:500px) {
   .nav_container nav a {
     width: 450px;
-    border: 2px solid red;
   }
 }
 .header-section {
@@ -195,8 +190,9 @@ table {
   justify-content: center;
 }
 .header-section img {
+  border: 10px solid #520d52;
+  border-top: none;
   justify-content: center;
-  margin-top: 110px;
   height: 500px;
   width: 70%;
   max-width: 100%;
@@ -208,10 +204,10 @@ table {
 }
 .header-section .intro {
   position: absolute;
-  margin-top: 200px;
+  margin-top: 100px;
   width: 30%;
   font-size: 1.5rem;
-  color: white;
+  color: black;
 }
 @media (max-width:500px) {
   .header-section .intro {
@@ -224,11 +220,11 @@ table {
   display: flex;
 }
 .btn-container .btn {
-  border: 2px outset white;
+  border: 2px inset #b854b8;
   font-size: 1.2rem;
   text-align: center;
   margin: 20px;
-  background-color: greenyellow;
+  background-color: #520d52;
   width: 40%;
   padding: 20px;
   border-radius: 45%;
