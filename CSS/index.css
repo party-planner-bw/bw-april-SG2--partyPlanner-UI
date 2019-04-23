@@ -167,6 +167,7 @@ table {
   display: flex;
   justify-content: flex-end;
   width: 500px;
+  padding-right: 20px;
 }
 @media (max-width:500px) {
   .nav_container {
@@ -175,7 +176,7 @@ table {
 }
 .nav_container nav a {
   margin-left: 20px;
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -205,13 +206,13 @@ table {
 .header-section .intro {
   position: absolute;
   margin-top: 100px;
-  width: 30%;
+  width: 40%;
   font-size: 1.5rem;
   color: black;
 }
 @media (max-width:500px) {
   .header-section .intro {
-    margin-top: 120px;
+    margin-top: 80px;
     width: 50%;
     font-size: 1rem;
   }
@@ -221,6 +222,7 @@ table {
 }
 .btn-container .btn {
   border: 2px inset #b854b8;
+  text-decoration: none;
   font-size: 1.2rem;
   text-align: center;
   margin: 20px;
@@ -228,6 +230,10 @@ table {
   width: 40%;
   padding: 20px;
   border-radius: 45%;
+}
+.btn-container .btn a {
+  text-decoration: none;
+  color: white;
 }
 @media (max-width:500px) {
   .btn-container .btn {
@@ -273,31 +279,38 @@ table {
 }
 .tabs .tabs-item-selected {
   display: block;
-  background-color: white;
+  background-image: url('../images/header_image.jpg');
+  background-repeat: none;
+  background-size: 750px 300px;
 }
-.tabs .tabs-links {
+.tabs-links {
   display: flex;
-  background-color: greenyellow;
+  background-color: #520d52;
 }
-.tabs .tabs-link {
+.tabs-link {
   padding: 20px 25px;
   font-size: 24px;
-  background-color: greenyellow;
+  background-color: #520d52;
   border-right: 1px solid black;
   color: white;
   cursor: pointer;
 }
-.tabs .tabs-link:hover {
+.tabs-link:hover {
   background-color: green;
 }
-.tabs .tabs-link-selected {
+.tabs-link-selected {
   z-index: 2;
   border-right: 1px solid greenyellow;
-  background-color: white;
-  color: purple;
+  background-color: #e7ebf7;
+  color: black;
 }
-.tabs .tabs-link-selected:hover {
+.tabs-link-selected:hover {
   background-color: white;
+}
+.tabs-item-description {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
 }
 footer {
   background-color: white;
