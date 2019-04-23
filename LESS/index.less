@@ -49,6 +49,29 @@ table {
 
 //MAIN CONTENT//
 
+@main-font: 'Lato', sans-serif;
+@second-font: 'Slabo 27px', serif;
+@btn-color: #242424;
+@border: lightgrey;
+
+.button-creator(@margin) {
+    border-radius: 4px;
+    height: 39px;
+    width: 45%;
+    margin-right:@margin;
+    font-family: @main-font;
+    font-size: 1.6rem;
+    border: 1px solid#242424;
+    color: white;
+    cursor: pointer;
+    background-color: @btn-color;
+
+    &:hover {
+        background: white;
+        color: @btn-color;
+        }
+ }
+
 html {
 	box-sizing: border-box;
 	font-size: 62.5%; 
@@ -65,27 +88,51 @@ html {
   }
 
   h1 {
-      font-size: 2rem;
+      font-size: 3rem;
       padding-left: 1%;
+      font-family: @main-font; 
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-family: @main-font;
 }
 
 p {
-    font-size: 2rem
+    font-size: 1.8rem;
+    font-family: @second-font;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid@border;
 
+    .top-btns {
+        width: 18%;
+        display: flex;
+        margin-right: 2%;
 
+        button {
+            .button-creator(4%);
+        
+        }
+    }
+
+    nav {
+
+        padding-top: 10px;
+        
+        a {
+            margin-left: 61px;
+            font-size: 2rem;
+            text-decoration: none;
+            color: black;
+            font-family: @main-font;
+            }
+        }
 }
-
 
 .main-page {
     max-width: 1200px;
@@ -96,26 +143,47 @@ header {
     .top-content {
         display: flex;
         flex-direction: row-reverse;
-    }
     
-    .top-img {
-        width: 93%;
-        padding: 21px;
+        .top-img {
+            width: 93%;
+            padding: 21px;
+            }
+    
+        h2 {
+            margin-left: 24%
+        }
+    
+        .top-txt {
+            padding: 133px 0px 0 46px;
+            line-height: 43px;
+        }
+    
+        button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 15px;
+            .button-creator(32%);        }
+    
     }
+        
+         .int-text {
+            line-height: 5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 17px;
+    } 
 
-    .top-txt {
-        padding: 19px 0px 0 18px;
-        line-height: 43px;
-    }
-
-    .int-text {
-        line-height: 5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 17px; 
-    }
-  
 }
+
+.features {
+    display: flex;
+
+.feat-one {
+    justify-content: center;
+}
+}
+
+
 
 
