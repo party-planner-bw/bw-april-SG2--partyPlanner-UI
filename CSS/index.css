@@ -144,7 +144,8 @@ h1 {
   padding-left: 1%;
   font-family: 'Lato', sans-serif;
 }
-h2 {
+h2,
+h3 {
   font-size: 3rem;
   font-family: 'Lato', sans-serif;
 }
@@ -231,7 +232,7 @@ header nav a {
 }
 .int-text {
   line-height: 38px;
-  margin: 17px 0 34px 20%;
+  margin: 41px 0 34px 20%;
 }
 .features {
   display: flex;
@@ -242,15 +243,67 @@ header nav a {
   display: flex;
   flex-direction: row;
 }
+.features .feat-one .mid-img {
+  padding-right: 3%;
+  width: 431%;
+}
+.features .feat-one .one-txt {
+  padding-top: 72px;
+}
+.features .feat-one .one-txt h3 {
+  line-height: 54px;
+  padding-left: 21%;
+}
+.features .feat-one .one-txt p {
+  line-height: 27px;
+}
 .features .feat-two {
   display: flex;
   flex-direction: row-reverse;
+}
+.features .feat-two .two-txt {
+  background: #ECECEC;
+  padding: 43px 27px 0px 50px;
+}
+.features .feat-two .two-txt h3 {
+  padding-left: 40%;
+  padding-bottom: 15px;
+}
+.features .feat-two .two-txt p {
+  line-height: 27px;
 }
 .features .feat-three {
   display: flex;
   flex-direction: row;
 }
+.features .feat-three .three-img {
+  width: 429%;
+}
+.features .feat-three .three-txt {
+  padding: 67px 0 0 32px;
+}
+.features .feat-three .three-txt h3 {
+  line-height: 56px;
+  padding-left: 98px;
+}
+.features .feat-three .three-txt p {
+  line-height: 27px;
+}
 .features .feat-four {
   display: flex;
   flex-direction: row-reverse;
+}
+.features .feat-four .four-img {
+  width: 311%;
+}
+.features .feat-four .four-txt {
+  background: #ECECEC;
+  padding: 47px 19px 0 42px;
+}
+.features .feat-four .four-txt h3 {
+  padding-bottom: 18px;
+  padding-left: 6%;
+}
+.features .feat-four .four-txt p {
+  line-height: 27px;
 }
