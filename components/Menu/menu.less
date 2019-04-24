@@ -14,15 +14,18 @@
 
 
 .logo_container{
-    
     display:flex;
     width: 500px;
     margin-right: 500px;
         @media @mobile {
             text-align: center;
             padding: 0 30px;
-      margin-right: 150px;
+            margin-right: 50px;
     }
+    @media @mobilesm {
+        margin-right: 0px;
+        padding-right: 0px;
+      }
     h1 {
         font-size: 3rem;
         color: #e7ebf7;
@@ -35,14 +38,16 @@
 
 
 .nav_container{
-    
     display:flex;
     justify-content: flex-end;
-    align-items: flex-end;
     width: 500px;
     padding-right: 20px;
         @media @mobile {
-        width: 150px;
+        width: 580px;
+        }
+        @media @mobilesm {
+            padding-right: 0;
+            width: 900px;
         }
     nav {
        a {
@@ -52,10 +57,10 @@
         text-decoration: none;
         @media @mobile {
             padding-top: 40px;
-            font-size: 1.3rem;
-            width: 450px;
-            
-            
+            font-size: 1rem;
+            width: 450px;    
+        }
+        @media @mobilesm {
 
         }
        }
