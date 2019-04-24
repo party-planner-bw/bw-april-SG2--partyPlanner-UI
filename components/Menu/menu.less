@@ -23,20 +23,23 @@
             padding: 0 10px;
             margin-right: 50px;
     }
-    @media @400px {
+    @media @452px { 
         margin-right: 0px;
-        padding-right: 0px;  
-      }
+     }
+    @media @406px { 
+        margin-right: 0px;
+        padding: 0px;
+     }
+     
+   
+    
     h1 {
         font-size: 6rem;
         color: #e7ebf7;
         @media @500px {
             font-size: 2.9rem;
         }
-        // @media @360px {
-        //     padding-left: 55px;
         
-        // }
         
     }
 }
@@ -52,15 +55,33 @@
             width: 700px;
             align-items: center;
         }
-        @media @400px {
-            padding-right: 0px;
-            width: 800px;
-            align-items: center;
-        }
-        .menu-button {
-            visibility: hidden;
-        }
+        
+    
+        // @media @400px {
+        //     padding-right: 0px;
+        //     width: 800px;
+        //     align-items: center;
+        // }
+        
     .nav {
+        @media @456px { 
+            display: flex;
+            padding-bottom: 50px;
+         }
+         @media @452px { 
+            display: flex;
+            padding-bottom: 50px;
+         }
+        @media @392px { 
+            display: flex;
+            padding-bottom: 50px;
+         }
+         @media @387px {
+            justify-content: center;
+            align-items: center;
+        
+        }
+         
        a {
         margin-left: 20px;
         font-size: 2.5rem;
@@ -69,23 +90,32 @@
         @media @500px {
             padding-top: 40px;
             padding-right: 10px;
-            font-size: 1.5rem;
-            width: 450px;    
+            font-size: 1.5rem;    
         }
-        @media @400px {
-            margin-left: 10px;
-            font-size: 1.5rem;
-            padding-right: 10px;
+        @media @387px {
+            padding-right: 5px;
+        
         }
-        @media @470px {
-            font-size: .5rem
-            
-            
+        @media @371px {
+            padding-right: 0;
+        
         }
+        @media @354px {
+            font-size:1.3rem;
+            padding-right: 5px;
+        
+        }
+        
+        
+        
+        
        }
     }
 }
 
+.menu-button {
+    visibility: hidden;
+}
 
 
 
