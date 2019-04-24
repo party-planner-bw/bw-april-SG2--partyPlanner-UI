@@ -148,10 +148,10 @@ table {
   }
 }
 .logo_container {
-  border: 2px solid red;
   display: flex;
   width: 500px;
   margin-right: 500px;
+  padding-left: 10px;
 }
 @media (max-width:500px) {
   .logo_container {
@@ -167,12 +167,12 @@ table {
   }
 }
 .logo_container h1 {
-  font-size: 3rem;
+  font-size: 6rem;
   color: #e7ebf7;
 }
 @media (max-width:500px) {
   .logo_container h1 {
-    font-size: 1.9rem;
+    font-size: 2.9rem;
   }
 }
 .nav_container {
@@ -183,14 +183,13 @@ table {
 }
 @media (max-width:500px) {
   .nav_container {
-    border: 2px solid red;
+    padding-right: 0;
     width: 700px;
     align-items: center;
   }
 }
 @media (max-width:400px) {
   .nav_container {
-    border: 2px solid red;
     padding-right: 0px;
     width: 800px;
     align-items: center;
@@ -201,22 +200,28 @@ table {
 }
 .nav_container .nav a {
   margin-left: 20px;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #E7EBF7;
   text-decoration: none;
 }
 @media (max-width:500px) {
   .nav_container .nav a {
     padding-top: 40px;
-    font-size: 1rem;
+    padding-right: 10px;
+    font-size: 1.5rem;
     width: 450px;
   }
 }
 @media (max-width:400px) {
   .nav_container .nav a {
     margin-left: 10px;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     padding-right: 10px;
+  }
+}
+@media (max-width:470px) {
+  .nav_container .nav a {
+    font-size: 0.5rem;
   }
 }
 .header-section {
@@ -242,19 +247,14 @@ table {
   position: absolute;
   margin-top: 100px;
   width: 40%;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: black;
 }
 @media (max-width:500px) {
   .header-section .intro {
     margin-top: 40px;
     width: 65%;
-    font-size: 1rem;
-  }
-}
-@media (max-width:500px) {
-  .header-section .intro {
-    font-size: 0.8rem;
+    font-size: 1.6rem;
   }
 }
 .btn-container {
@@ -319,7 +319,7 @@ table {
 }
 .tabs .tabs-item .tabs-item-title {
   text-align: center;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 @media (max-width:500px) {
@@ -335,7 +335,7 @@ table {
 }
 @media (max-width:500px) {
   .tabs .tabs-item-selected {
-    background-size: 378px 300px;
+    background-size: 395px 300px;
   }
 }
 @media (max-width:400px) {
@@ -349,7 +349,7 @@ table {
 }
 .tabs-link {
   padding: 20px 25px;
-  font-size: 24px;
+  font-size: 2.4rem;
   background-color: #520d52;
   border-right: 1px solid black;
   color: white;
@@ -374,6 +374,7 @@ table {
 }
 .tabs-item-description {
   margin: 0 auto;
+  font-size: 1.8rem;
   text-align: center;
   width: 50%;
 }
@@ -384,15 +385,30 @@ table {
 }
 footer {
   background-color: #E7EBF7;
+  font-size: 2.5rem;
   padding: 40px;
   margin-top: 30px;
   text-align: center;
 }
-body {
+@media (max-width:500px) {
+  footer {
+    font-size: 1.5rem;
+    padding-right: 0px;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+html body {
   box-sizing: border-box;
   min-width: 300px;
   margin: 0;
 }
-body .page_container {
+html body .page_container {
   background-image: url('../images/bg_image.jpg');
+}
+@media (max-width:500px) {
+  html body .page_container {
+    max-width: 500px;
+  }
 }
