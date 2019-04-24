@@ -19,20 +19,25 @@
     margin-right: 500px;
         @media @mobile {
             text-align: center;
-            padding: 0 30px;
+            padding: 0 10px;
             margin-right: 50px;
     }
-    @media @mobilesm {
+    @media @mobilesm1 {
         margin-right: 0px;
         padding-right: 0px;
+        
       }
     h1 {
         font-size: 3rem;
         color: #e7ebf7;
         @media @mobile {
             font-size: 1.9rem;
+        }
+        @media @mobilesm {
+            padding-left: 55px;
         
         }
+        
     }
 }
 
@@ -43,16 +48,20 @@
     width: 500px;
     padding-right: 20px;
         @media @mobile {
-        width: 580px;
+            .test;
+        width: 600px;
+        align-items: center;
         }
-        @media @mobilesm {
-            padding-right: 0;
-            width: 900px;
+        @media @mobilesm1 {
+            .test;
+            padding-right: 10px;
+            width: 700px;
+            align-items: center;
         }
-    nav {
+    .nav {
        a {
         margin-left: 20px;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: #E7EBF7;
         text-decoration: none;
         @media @mobile {
@@ -60,9 +69,52 @@
             font-size: 1rem;
             width: 450px;    
         }
-        @media @mobilesm {
-
+        @media @mobilesm1 {
+            margin-left: 10px;
+            
+            
         }
        }
     }
 }
+
+.menu-button {
+    visibility: hidden;
+}
+
+
+// //
+// @media @mobilesm {
+//     .menu-button {
+//         visibility: visible;
+//         position: absolute;
+//         left: 20px;
+//         top: 20px;
+//         cursor: pointer;
+//       }
+      
+//       nav {
+//         display: none;
+//         position: fixed;
+//         top: 75px;
+//         left: 0;
+//         width: 350px;
+//         height: 100vh;
+//         background-color: #81C784;
+//         border: 1px solid #004D40;
+//         border-left: none;
+//         border-bottom: none;
+//         z-index: 2; 
+//       }
+      
+//       .nav_container nav a {
+//         list-style-type: none;
+//         font-size: 32px;
+//         padding: 30px 0;
+//         text-align: center;
+//       }
+      
+//       .nav--open {
+//         display: block;
+//       }
+// }
