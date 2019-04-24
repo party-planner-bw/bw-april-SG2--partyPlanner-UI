@@ -188,7 +188,7 @@ table {
 @media (max-width:500px) {
   .nav_container {
     border: 2px solid red;
-    width: 600px;
+    width: 700px;
     align-items: center;
   }
 }
@@ -216,6 +216,7 @@ table {
 @media (max-width:400px) {
   .nav_container .nav a {
     margin-left: 10px;
+    font-size: 0.7rem;
   }
 }
 .menu-button {
@@ -295,7 +296,7 @@ table {
 }
 @media (max-width:400px) {
   .tabs-heading {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 .tabs {
