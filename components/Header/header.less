@@ -77,18 +77,43 @@
         max-width: 100%;
     }
     .about_section {
-        .test;
+        
         display: flex;
+        align-content: space-around;
         position: absolute;
-        margin-top: 100px;
-        width: 60%;
-
-        .team_img {
-            margin-left: 30px;
+        margin-top: 120px;
+        width: 55%;
+        height: 550px;
+        .team1_img {
+            border: 4px outset #520D52;
             border-radius: 10%;
             height: 150px;
-        }
-        
+        } 
+        .team2_img {
+            border: 4px outset #520D52;
+            border-radius: 10%;
+            height: 150px;
+        } 
     }
   }
+  .person {
+      display: flex;
+      margin: 0 0 45px 0;
+      text-align: center;
+      p {
+          font-size: 2rem;
+          margin-top: 60px;
+      }
+      
+  }
 
+  .left-side .person {
+      flex-direction: row-reverse;
+    margin-right: 30px;
+
+  }
+
+  .right-side .person {
+    margin-left: 20px;
+
+}
