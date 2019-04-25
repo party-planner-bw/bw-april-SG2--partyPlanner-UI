@@ -509,6 +509,7 @@ table {
 @media (max-width:500px) {
   .tabs-item-description {
     width: 80%;
+    font-size: 1.3rem;
   }
 }
 .btn-container .btbtn {
