@@ -36,19 +36,24 @@
              @media @387px {
                 font-size: 1.4rem;
             }
+            @media @349px {
+                font-size: 1.2rem;
+            }
         }
     }
 
   .btn-container{
     display: flex;
+    justify-content: center;
+    align-content: center;
     .btn {
-        border: 2px inset rgb(184, 84, 184);
+        border: 3px solid rgb(184, 84, 184);
         text-decoration: none;
         font-size: 1.2rem;
         text-align: center;
         margin: 20px;
         background-color: rgb(82, 13, 82);
-        width: 40%;
+        width: 20%;
         padding:20px;
         border-radius: 45%;
         a {
@@ -61,59 +66,11 @@
             width: 28%;
             padding: 10px;
         }
-    }
-  }
-
-  .about-header {
-    position:relative;
-    display:flex;
-    justify-content: center;
-    .header_img {
-        border: 10px solid rgb(82, 13, 82);
-        border-top:none;
-        justify-content: center;
-        height: 800px;
-        width: 70%;
-        max-width: 100%;
-    }
-    .about_section {
         
-        display: flex;
-        align-content: space-around;
-        position: absolute;
-        margin-top: 120px;
-        width: 55%;
-        height: 550px;
-        .team1_img {
-            border: 4px outset #520D52;
-            border-radius: 10%;
-            height: 150px;
-        } 
-        .team2_img {
-            border: 4px outset #520D52;
-            border-radius: 10%;
-            height: 150px;
-        } 
     }
   }
-  .person {
-      display: flex;
-      margin: 0 0 45px 0;
-      text-align: center;
-      p {
-          font-size: 2rem;
-          margin-top: 60px;
-      }
-      
+
+  .card_img {
+      position: absolute;
+      visibility: hidden;
   }
-
-  .left-side .person {
-      flex-direction: row-reverse;
-    margin-right: 30px;
-
-  }
-
-  .right-side .person {
-    margin-left: 20px;
-
-}

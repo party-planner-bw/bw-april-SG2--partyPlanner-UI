@@ -172,7 +172,7 @@ table {
   }
 }
 .logo_container h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   color: #e7ebf7;
 }
 @media (max-width:500px) {
@@ -297,17 +297,24 @@ table {
     font-size: 1.4rem;
   }
 }
+@media (max-width:349px) {
+  .header-section .intro {
+    font-size: 1.2rem;
+  }
+}
 .btn-container {
   display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .btn-container .btn {
-  border: 2px inset #b854b8;
+  border: 3px solid #b854b8;
   text-decoration: none;
   font-size: 1.2rem;
   text-align: center;
   margin: 20px;
   background-color: #520d52;
-  width: 40%;
+  width: 20%;
   padding: 20px;
   border-radius: 45%;
 }
@@ -323,52 +330,9 @@ table {
     padding: 10px;
   }
 }
-.about-header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.about-header .header_img {
-  border: 10px solid #520d52;
-  border-top: none;
-  justify-content: center;
-  height: 800px;
-  width: 70%;
-  max-width: 100%;
-}
-.about-header .about_section {
-  display: flex;
-  align-content: space-around;
+.card_img {
   position: absolute;
-  margin-top: 120px;
-  width: 55%;
-  height: 550px;
-}
-.about-header .about_section .team1_img {
-  border: 4px outset #520D52;
-  border-radius: 10%;
-  height: 150px;
-}
-.about-header .about_section .team2_img {
-  border: 4px outset #520D52;
-  border-radius: 10%;
-  height: 150px;
-}
-.person {
-  display: flex;
-  margin: 0 0 45px 0;
-  text-align: center;
-}
-.person p {
-  font-size: 2rem;
-  margin-top: 60px;
-}
-.left-side .person {
-  flex-direction: row-reverse;
-  margin-right: 30px;
-}
-.right-side .person {
-  margin-left: 20px;
+  visibility: hidden;
 }
 .tabs-heading {
   color: #E7EBF7;
@@ -542,7 +506,7 @@ footer {
   background-color: #E7EBF7;
   font-size: 2.5rem;
   padding: 40px;
-  margin-top: 30px;
+  margin-top: 100px;
   text-align: center;
 }
 @media (max-width:500px) {

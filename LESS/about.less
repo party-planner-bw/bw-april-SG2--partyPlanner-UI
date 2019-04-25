@@ -1,0 +1,165 @@
+  //Variables and mixins
+  @import "variables";
+  @import "mixins.less";
+  
+
+  html {
+    font-size: 62.5%;
+    body {
+      box-sizing: border-box;
+      min-width: 300px;
+      margin: 0;
+      .page_container {
+      background-image: url('../images/bg_image.jpg');
+      @media @500px {
+      background-image: none;
+      background-color: #E7EBF7;
+  }
+  }
+  }
+}
+
+
+.about-header {
+  position:relative;
+  display:flex;
+  justify-content: center;
+  @media @500px {
+    .test;
+    
+    max-width: 500px;
+}
+  .header_img {
+      border: 10px solid rgb(82, 13, 82);
+      border-top:none;
+      justify-content: center;
+      height: 800px;
+      width: 70%;
+      max-width: 100%;
+      @media @500px {
+        display: none;
+    }
+  
+  }
+  .about_section {
+      display: flex;
+      align-content: space-around;
+      position: absolute;
+      margin-top: 120px;
+      width: 55%;
+      height: 550px;
+      @media @500px {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+      .team1_img {
+          border: 4px outset #520D52;
+          border-radius: 10%;
+          height: 150px;
+          @media @500px {
+            height: 100px;
+           
+        }
+      } 
+      .team2_img {
+          border: 4px outset #520D52;
+          border-radius: 10%;
+          height: 150px;
+          @media @500px {
+            height: 100px;
+        }
+      } 
+  }
+}
+
+.person {
+    display: flex;
+    margin: 0 0 45px 0;
+    text-align: center;
+    
+    p {
+      font-size: 2rem;
+      margin-top: 60px;
+      @media @500px {
+        font-size: 1.2rem;
+        margin-top: 20px;
+      }
+      @media @428px {
+        font-size: .7rem;
+      }
+      
+      
+    }
+}
+
+.arkadiusz {
+  margin-left: 10px;
+  
+}
+.brennon {
+  margin-left: 15px;
+  margin-right: -80px;
+  @media @500px {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}
+.destiny {
+  @media @500px {
+    margin-left: 10px;
+  }
+  
+}
+.isaias {
+  margin-left: -30px;
+  @media @500px {
+    padding-left: 15px;
+  }
+}
+.lydia {
+   margin-right: 20px;
+  margin-left: -80px;
+  @media @500px {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}
+.shannon {
+  margin-left: -30px;
+  @media @500px {
+    margin-left: 0;
+  }
+}
+
+.left-side .person {
+    flex-direction: row-reverse;
+  margin-right: 30px;
+  margin-left: 20px;
+  @media @500px {
+    margin: -150px 30px 0 60px;
+    position: relative;
+}
+
+}
+
+.right-side .person {
+  margin-left: 180px;
+  @media @500px {
+    margin: -150px 30px 0 60px;
+    position: relative;
+}
+}
+
+.about_footer {
+  @media @500px {
+    margin-top: 1200px;
+  }
+}
+
+.card_img {
+ @media @500px {
+   position: relative;
+  visibility: visible;
+  height: 200px;
+ }
+}
