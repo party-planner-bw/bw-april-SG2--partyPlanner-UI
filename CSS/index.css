@@ -347,7 +347,6 @@ table {
 }
 .btn-container .btn:hover {
   background-color: #8f158f;
-  color: #520D52;
 }
 .card_img {
   position: absolute;
@@ -505,7 +504,7 @@ table {
   cursor: pointer;
 }
 .tabs-link:hover {
-  background-color: black;
+  background-color: #8f158f;
 }
 @media (max-width:500px) {
   .tabs-link {
@@ -523,7 +522,10 @@ table {
   color: black;
 }
 .tabs-link-selected:hover {
-  background-color: white;
+  background-color: #8f158f;
+}
+.tabs-link:first-child {
+  border-left: 3px solid #E7EBF7;
 }
 .tabs-item-description {
   margin: 0 auto;
