@@ -42,33 +42,18 @@
         }
     }
 
-  .btn-container{
+
+.btn-container{
     display: flex;
     justify-content: center;
-    align-content: center;
-    .btn {
-        border: 3px solid rgb(184, 84, 184);
-        text-decoration: none;
-        font-size: 1.2rem;
-        text-align: center;
-        margin: 20px;
-        background-color: rgb(82, 13, 82);
-        width: 20%;
-        padding:20px;
-        border-radius: 45%;
-        a {
-            text-decoration: none;
-            color: white;
-        }
-        @media @500px {
-            font-size: .7rem;
-            margin: 13px 30px 15px 30px;
-            width: 28%;
-            padding: 10px;
-        }
-        
-    }
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+.btn {
+    .button-creator(200px, 45px, @main-color, @white, 1.8rem);
+     text-decoration: none; 
   }
+}
 
   .card_img {
       position: absolute;
