@@ -400,18 +400,18 @@ table {
     margin-left: 35px;
   }
 }
-.tabs .tabs-items {
+.tabs .tabs-items-container {
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
 }
-.tabs .tabs-item {
+.tabs .content-holder {
   display: none;
   width: 100%;
   padding: 40px 20px 0 20px;
 }
-.tabs .tabs-item .tabs-item-title {
+.tabs .content-holder .content-title {
   text-align: center;
   font-size: 2.4rem;
   font-weight: bold;
@@ -419,68 +419,68 @@ table {
   margin-bottom: 10px;
 }
 @media (max-width:500px) {
-  .tabs .tabs-item .tabs-item-title {
+  .tabs .content-holder .content-title {
     display: none;
   }
 }
-.tabs .tabs-item-selected {
+.tabs .current-item {
   display: block;
   background-image: url('../images/header_image.jpg');
   background-repeat: none;
   background-size: 750px 300px;
 }
 @media (max-width:500px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 395px 300px;
   }
 }
 @media (max-width:486px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 381px 300px;
   }
 }
 @media (max-width:467px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 366px 300px;
   }
 }
 @media (max-width:456px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 365px 300px;
   }
 }
 @media (max-width:448px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 355px 300px;
   }
 }
 @media (max-width:440px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 346px 300px;
   }
 }
 @media (max-width:428px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 345px 300px;
   }
 }
 @media (max-width:400px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 330px 300px;
   }
 }
 @media (max-width:392px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 323px 300px;
   }
 }
 @media (max-width:384px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 317px 300px;
   }
 }
 @media (max-width:354px) {
-  .tabs .tabs-item-selected {
+  .tabs .current-item {
     background-size: 300px 300px;
   }
 }
@@ -516,25 +516,25 @@ table {
     font-size: 1rem;
   }
 }
-.tabs-link-selected {
+.current-tab {
   z-index: 2;
   background-color: #E7EBF7;
   color: black;
 }
-.tabs-link-selected:hover {
+.current-tab:hover {
   background-color: #8f158f;
 }
 .tabs-link:first-child {
   border-left: 3px solid #E7EBF7;
 }
-.tabs-item-description {
+.tabs-content {
   margin: 0 auto;
   font-size: 1.6rem;
   text-align: center;
   width: 70%;
 }
 @media (max-width:500px) {
-  .tabs-item-description {
+  .tabs-content {
     width: 80%;
     font-size: 1.3rem;
   }

@@ -40,17 +40,17 @@
   //   margin-left: 40px;
   //   width: 80%;
   // }
-    .tabs-items {
+    .tabs-items-container {
       width: 100%;
       height: 300px;
       display: flex;
       justify-content: center;
     }
-    .tabs-item {
+    .content-holder {
       display: none; 
       width: 100%;
       padding: 40px 20px 0 20px;
-      .tabs-item-title {
+      .content-title {
         text-align: center;
         font-size: 2.4rem;
         font-weight: bold;
@@ -62,7 +62,7 @@
         
       }
     }
-    .tabs-item-selected {
+    .current-item {
       display: block;
       background-image: url('../images/header_image.jpg');
       background-repeat: none;
@@ -139,7 +139,7 @@
   }
     }
 
-    .tabs-link-selected {
+    .current-tab {
       z-index: 2;
       
       background-color: #E7EBF7;
@@ -154,7 +154,7 @@
     }
   
 
-  .tabs-item-description {
+  .tabs-content {
     margin: 0 auto;
     font-size: 1.6rem;
     text-align: center;
