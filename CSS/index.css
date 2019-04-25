@@ -309,6 +309,11 @@ table {
   justify-content: space-evenly;
   padding-top: 20px;
 }
+@media (max-width:500px) {
+  .btn-container {
+    padding-top: 10px;
+  }
+}
 .btn-container .btn {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -316,6 +321,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   width: 200px;
   height: 45px;
   background-color: #520D52;
@@ -323,15 +329,24 @@ table {
   border: 1px solid silver;
   cursor: pointer;
   font-size: 1.8rem;
-  text-decoration: none;
 }
 @media (max-width:500px) {
   .btn-container .btn {
     width: 100%;
   }
 }
+@media (max-width:500px) {
+  .btn-container .btn {
+    width: 100px;
+    height: 35px;
+  }
+}
+.btn-container .btn a {
+  color: #E7EBF7;
+  text-decoration: none;
+}
 .btn-container .btn:hover {
-  background: #FFFFFF;
+  background-color: #8f158f;
   color: #520D52;
 }
 .card_img {

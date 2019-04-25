@@ -49,9 +49,23 @@
     align-items: center;
     justify-content: space-evenly;
     padding-top: 20px;
+    @media @500px {
+        padding-top:10px;
+    }
 .btn {
     .button-creator(200px, 45px, @main-color, @white, 1.8rem);
-     text-decoration: none; 
+    @media @500px {
+        width: 100px;
+        height: 35px;
+    }
+    a {
+        color: @grey;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: rgb(143, 21, 143);
+        color: @main-color;
+      }
   }
 }
 
