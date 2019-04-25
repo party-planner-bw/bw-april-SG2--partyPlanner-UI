@@ -25,33 +25,24 @@
             padding: 16px 20px 27px 29px;
         }
 
-    h2 {
-        margin-left: 24%;
+         h2 {
+            margin-left: 24%;
 
-        @media @mobile {
+             @media @mobile {
             padding-bottom: 7px;
             margin-left: 33%
-        }
-        
-    }
-
-    button {
-        display: block;
-        margin: 0 auto;
-        margin-top: 15px;
-        .button-creator();
-        width: 57%;
-        margin-right: 26%; 
-
-        @media @mobile {
-            width: 64%;
-            height: 59px;
-            margin-right: 17%;
             }
+         }
+         .content-btn{
+            .button-creator();
+            display: block;
+            margin: 21px auto;
         }
+     
     }
 }
     
+
 .int-text {
     line-height: 38px;
     margin: 41px 0 34px 20%;
@@ -65,6 +56,10 @@
 
 .features {
     .alignment-basic();
+
+    @media @mobile {
+        padding: 0 2%;
+    }
 
     .feat-one {
         .alignmet-row();
@@ -199,7 +194,16 @@
         }
         
     }
+
+.feat-btn {
+    .feature-btn();
+    }
 }
+
+
+
+
+
 
 
 

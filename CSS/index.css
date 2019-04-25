@@ -126,18 +126,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-img {
-  width: 100%;
-  height: auto;
 }
 h1 {
   font-size: 3rem;
@@ -163,6 +157,10 @@ h3 {
 p {
   font-size: 1.8rem;
   font-family: 'Slabo 27px', serif;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 .main-page {
   max-width: 1200px;
@@ -201,12 +199,12 @@ header nav a {
     margin-left: 50px;
   }
 }
-.top-btns {
+header .top-btns {
   width: 18%;
   display: flex;
 }
 @media (max-width: 500px) {
-  .top-btns {
+  header .top-btns {
     width: 100%;
     padding-top: 18px;
     margin-right: 0;
@@ -214,7 +212,7 @@ header nav a {
     flex-direction: column;
   }
 }
-.top-btns button {
+header .top-btns button {
   border-radius: 4px;
   height: 39px;
   width: 47%;
@@ -223,15 +221,14 @@ header nav a {
   font-size: 1.6rem;
   border: 1px solid #242424;
   color: white;
-  cursor: pointer;
   background-color: #242424;
 }
-.top-btns button:hover {
+header .top-btns button:hover {
   background: white;
   color: #242424;
 }
 @media (max-width: 500px) {
-  .top-btns button {
+  header .top-btns button {
     margin: 18px 0;
     height: 64px;
     width: 90%;
@@ -298,10 +295,7 @@ header nav a {
     margin-left: 33%;
   }
 }
-.top-content .top-txt button {
-  display: block;
-  margin: 0 auto;
-  margin-top: 15px;
+.top-content .top-txt .content-btn {
   border-radius: 4px;
   height: 39px;
   width: 47%;
@@ -310,21 +304,13 @@ header nav a {
   font-size: 1.6rem;
   border: 1px solid #242424;
   color: white;
-  cursor: pointer;
   background-color: #242424;
-  width: 57%;
-  margin-right: 26%;
+  display: block;
+  margin: 21px auto;
 }
-.top-content .top-txt button:hover {
+.top-content .top-txt .content-btn:hover {
   background: white;
   color: #242424;
-}
-@media (max-width: 500px) {
-  .top-content .top-txt button {
-    width: 64%;
-    height: 59px;
-    margin-right: 17%;
-  }
 }
 .int-text {
   line-height: 38px;
@@ -339,6 +325,11 @@ header nav a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .features {
+    padding: 0 2%;
+  }
 }
 .features .feat-one {
   display: flex;
@@ -468,4 +459,19 @@ header nav a {
 }
 .features .feat-four .four-txt p {
   line-height: 27px;
+}
+.features .feat-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 15%;
+  border-radius: 5px;
+  border: 1px solid #242424;
+  color: white;
+  background-color: #242424;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+}
+.features .feat-btn:hover {
+  background: white;
+  color: #242424;
 }
