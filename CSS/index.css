@@ -470,7 +470,9 @@ table {
 }
 .tabs-link {
   padding: 20px 25px;
-  font-size: 2.4rem;
+  font-size: 2rem;
+  border: 3px solid #E7EBF7;
+  border-left: none;
   background-color: #520d52;
   color: white;
   cursor: pointer;
@@ -478,9 +480,14 @@ table {
 .tabs-link:hover {
   background-color: black;
 }
+@media (max-width:500px) {
+  .tabs-link {
+    font-size: 1.3rem;
+  }
+}
 @media (max-width:400px) {
   .tabs-link {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 .tabs-link-selected {
