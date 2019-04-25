@@ -167,6 +167,94 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  header h1 {
+    padding-left: 33%;
+  }
+}
+header nav {
+  padding-left: 0;
+}
+.main-page {
+  background: #F4F4F4;
+}
+.members-header {
+  text-align: center;
+  padding: 60px 0;
+  font-size: 4rem;
+}
+.members {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .members {
+    padding-left: 4%;
+    flex-direction: column;
+    padding-right: 1%;
+  }
+}
+.members h3 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .members h3 {
+    font-size: 3.7rem;
+  }
+}
+.members .shannon,
+.members .isaias,
+.members .destiny,
+.members .brennon,
+.members .lydia,
+.members .arkadiusz {
+  padding-right: 3%;
+  padding-bottom: 6%;
+}
+.members .shannon h4,
+.members .isaias h4,
+.members .destiny h4,
+.members .brennon h4,
+.members .lydia h4,
+.members .arkadiusz h4 {
+  font-size: 3rem;
+  padding: 9px 0;
+  text-align: center;
+}
+.members .shannon p,
+.members .isaias p,
+.members .destiny p,
+.members .brennon p,
+.members .lydia p,
+.members .arkadiusz p {
+  line-height: 2.4rem;
+  padding-bottom: 3px;
+}
+.members .shannon button,
+.members .isaias button,
+.members .destiny button,
+.members .brennon button,
+.members .lydia button,
+.members .arkadiusz button {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 15%;
+  border-radius: 5px;
+  border: 1px solid #242424;
+  color: white;
+  background-color: #242424;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+}
+.members .shannon button:hover,
+.members .isaias button:hover,
+.members .destiny button:hover,
+.members .brennon button:hover,
+.members .lydia button:hover,
+.members .arkadiusz button:hover {
+  background: white;
+  color: #242424;
+}
 header {
   display: flex;
   justify-content: space-between;
