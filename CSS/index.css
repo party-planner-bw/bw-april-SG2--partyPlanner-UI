@@ -167,44 +167,186 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  header h1 {
+    padding-left: 33%;
+  }
+}
+header nav {
+  padding-left: 0;
+}
+@media (max-width: 500px) {
+  header nav a {
+    margin-left: 130px;
+  }
+}
+.main-page {
+  background: #F4F4F4;
+}
+.members-header {
+  text-align: center;
+  padding: 60px 0;
+  font-size: 4rem;
+}
+.members {
+  display: flex;
+  padding-left: 2.5%;
+}
+@media (max-width: 500px) {
+  .members {
+    width: 106%;
+    padding-left: 4%;
+    flex-direction: column;
+  }
+}
+.members h3 {
+  text-align: center;
+  padding: 8px 0;
+}
+@media (max-width: 500px) {
+  .members h3 {
+    font-size: 4.5rem;
+    padding: 36px 0;
+  }
+}
+.members .shannon,
+.members .isaias,
+.members .destiny,
+.members .brennon,
+.members .lydia,
+.members .arkadiusz {
+  padding-right: 10%;
+  padding-bottom: 30%;
+}
+@media (max-width: 500px) {
+  .members .shannon,
+  .members .isaias,
+  .members .destiny,
+  .members .brennon,
+  .members .lydia,
+  .members .arkadiusz {
+    padding-bottom: 6%;
+  }
+}
+.members .shannon h4,
+.members .isaias h4,
+.members .destiny h4,
+.members .brennon h4,
+.members .lydia h4,
+.members .arkadiusz h4 {
+  font-size: 3rem;
+  padding: 9px 0;
+  text-align: center;
+}
+.members .shannon p,
+.members .isaias p,
+.members .destiny p,
+.members .brennon p,
+.members .lydia p,
+.members .arkadiusz p {
+  line-height: 2.4rem;
+  padding-bottom: 3px;
+}
+.members .shannon button,
+.members .isaias button,
+.members .destiny button,
+.members .brennon button,
+.members .lydia button,
+.members .arkadiusz button {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 15%;
+  border-radius: 5px;
+  border: 1px solid #242424;
+  color: white;
+  background-color: #242424;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+}
+.members .shannon button:hover,
+.members .isaias button:hover,
+.members .destiny button:hover,
+.members .brennon button:hover,
+.members .lydia button:hover,
+.members .arkadiusz button:hover {
+  background: white;
+  color: #242424;
+}
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px 0;
   border-bottom: 1px solid lightgrey;
 }
 @media (max-width: 500px) {
   header {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
-header nav {
+header .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+@media screen and (max-height: 500px) {
+  header .sidenav .sidenav {
+    padding-top: 15px;
+  }
+  header .sidenav .sidenav a {
+    font-size: 18px;
+  }
+}
+header .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+header .sidenav a:hover {
+  color: #f1f1f1;
+}
+header .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+header .menu {
+  font-size: 3rem;
+  margin-left: 16px;
+}
+nav {
   padding-top: 10px;
 }
 @media (max-width: 500px) {
-  header nav {
+  nav {
     padding-top: 33px;
     padding-left: 7%;
   }
 }
-header nav a {
+nav a {
   margin-left: 61px;
   font-size: 2rem;
   text-decoration: none;
   color: black;
   font-family: 'Lato', sans-serif;
 }
-@media (max-width: 500px) {
-  header nav a {
-    margin-left: 78px;
-  }
-}
-header .top-btns {
+.top-btns {
   width: 18%;
   display: flex;
 }
 @media (max-width: 500px) {
-  header .top-btns {
+  .top-btns {
     width: 100%;
     padding-top: 18px;
     margin-right: 0;
@@ -212,7 +354,7 @@ header .top-btns {
     flex-direction: column;
   }
 }
-header .top-btns button {
+.top-btns button {
   border-radius: 4px;
   height: 39px;
   width: 47%;
@@ -223,12 +365,12 @@ header .top-btns button {
   color: white;
   background-color: #242424;
 }
-header .top-btns button:hover {
+.top-btns button:hover {
   background: white;
   color: #242424;
 }
 @media (max-width: 500px) {
-  header .top-btns button {
+  .top-btns button {
     margin: 18px 0;
     height: 64px;
     width: 90%;
@@ -497,109 +639,4 @@ header .top-btns button:hover {
   .bottom-nav a {
     font-size: 2.6;
   }
-}
-@media (max-width: 500px) {
-  header h1 {
-    padding-left: 33%;
-  }
-}
-header nav {
-  padding-left: 0;
-}
-@media (max-width: 500px) {
-  header nav a {
-    margin-left: 130px;
-  }
-}
-.main-page {
-  background: #F4F4F4;
-}
-.members-header {
-  text-align: center;
-  padding: 60px 0;
-  font-size: 4rem;
-}
-.members {
-  display: flex;
-  padding-left: 2.5%;
-}
-@media (max-width: 500px) {
-  .members {
-    width: 106%;
-    padding-left: 4%;
-    flex-direction: column;
-  }
-}
-.members h3 {
-  text-align: center;
-  padding: 8px 0;
-}
-@media (max-width: 500px) {
-  .members h3 {
-    font-size: 4.5rem;
-    padding: 36px 0;
-  }
-}
-.members .shannon,
-.members .isaias,
-.members .destiny,
-.members .brennon,
-.members .lydia,
-.members .arkadiusz {
-  padding-right: 10%;
-  padding-bottom: 30%;
-}
-@media (max-width: 500px) {
-  .members .shannon,
-  .members .isaias,
-  .members .destiny,
-  .members .brennon,
-  .members .lydia,
-  .members .arkadiusz {
-    padding-bottom: 6%;
-  }
-}
-.members .shannon h4,
-.members .isaias h4,
-.members .destiny h4,
-.members .brennon h4,
-.members .lydia h4,
-.members .arkadiusz h4 {
-  font-size: 3rem;
-  padding: 9px 0;
-  text-align: center;
-}
-.members .shannon p,
-.members .isaias p,
-.members .destiny p,
-.members .brennon p,
-.members .lydia p,
-.members .arkadiusz p {
-  line-height: 2.4rem;
-  padding-bottom: 3px;
-}
-.members .shannon button,
-.members .isaias button,
-.members .destiny button,
-.members .brennon button,
-.members .lydia button,
-.members .arkadiusz button {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 15%;
-  border-radius: 5px;
-  border: 1px solid #242424;
-  color: white;
-  background-color: #242424;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
-}
-.members .shannon button:hover,
-.members .isaias button:hover,
-.members .destiny button:hover,
-.members .brennon button:hover,
-.members .lydia button:hover,
-.members .arkadiusz button:hover {
-  background: white;
-  color: #242424;
 }
