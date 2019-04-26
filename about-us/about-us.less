@@ -1,0 +1,89 @@
+
+header {
+
+    
+    h1 {
+        @media @mobile {
+            padding-left: 33%;
+        }
+    }
+
+    nav {
+        padding-left: 0;
+
+        .home-nav {
+            margin-left: 0;
+        }
+
+        @media @mobile {
+            padding-left: 114px;
+        }
+
+
+        a {
+            @media @mobile {
+                margin-left:130px
+            }
+        }
+
+    }
+
+}
+
+.main-page {
+    background: @main-bck;
+}
+
+.members-header {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 4rem;
+}
+
+
+.members {
+    display: flex;
+    padding-left: 2.5%;
+
+    @media @mobile {
+        width: 106%;
+        padding-left: 4%;
+        flex-direction: column;
+    }
+
+    h3 {
+        text-align: center;
+        padding: 8px 0;
+
+        @media @mobile {
+            font-size:4.5rem;
+            padding: 36px 0;
+        }
+    }
+
+    .shannon, .isaias, .destiny, .brennon, .lydia, .arkadiusz {
+        padding-right: 10%;
+        padding-bottom: 30%;
+
+        @media @mobile {
+            padding-bottom: 6%;
+        }
+
+        h4 {
+            font-size: 3rem;
+            padding: 9px 0;
+            text-align: center;
+        }
+    
+        p {
+            line-height: 2.4rem;
+            padding-bottom: 3px;  
+        }  
+    
+        button {
+            .feature-btn();
+        }
+    }
+    
+}
+
