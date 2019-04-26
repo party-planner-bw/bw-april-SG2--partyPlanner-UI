@@ -5,7 +5,7 @@
     display:flex;
     justify-content: center;
     img {
-        border: 10px solid rgb(82, 13, 82);
+        border: 10px solid @purp;
         border-top:none;
         justify-content: center;
         height: 500px;
@@ -21,7 +21,7 @@
         margin-top: 100px;
         width: 40%;
         font-size: 2.5rem;
-        color: black;
+        color: @black;
             @media @500px {
                 margin-top: 40px;
                 width: 65%;
@@ -29,11 +29,11 @@
             }
             @media @467px { 
                 font-size: 1.5rem;
-             }
-             @media @400px { 
+            }
+            @media @400px { 
                 font-size: 1.4rem;
-             }
-             @media @387px {
+            }
+            @media @387px {
                 font-size: 1.4rem;
             }
             @media @349px {
@@ -41,6 +41,8 @@
             }
         }
     }
+
+
 
 
 .btn-container{
@@ -52,21 +54,20 @@
     @media @500px {
         padding-top:10px;
     }
-.btn {
-    .button-creator(200px, 45px, @main-color, @white, 1.8rem);
-    @media @500px {
+    .btn {
+        .button-creator(200px, 45px, @purp, @white, 1.8rem);
+        @media @500px {
         width: 100px;
         height: 35px;
-    }
-    a {
+        }
+        a {
         color: @grey;
         text-decoration: none;
+        }
+        &:hover {
+        background-color: @lipurp;
+        }
     }
-    &:hover {
-        background-color: rgb(143, 21, 143);
-        
-      }
-  }
 }
 
   .card_img {

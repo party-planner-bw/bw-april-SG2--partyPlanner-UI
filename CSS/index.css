@@ -255,7 +255,7 @@ table {
   justify-content: center;
 }
 .header-section img {
-  border: 10px solid #520d52;
+  border: 10px solid #520D52;
   border-top: none;
   justify-content: center;
   height: 500px;
@@ -273,7 +273,7 @@ table {
   margin-top: 100px;
   width: 40%;
   font-size: 2.5rem;
-  color: black;
+  color: #212529;
 }
 @media (max-width:500px) {
   .header-section .intro {
@@ -326,7 +326,7 @@ table {
   height: 45px;
   background-color: #520D52;
   color: #FFFFFF;
-  border: 1px solid silver;
+  border: 1px solid #8f158f;
   cursor: pointer;
   font-size: 1.8rem;
 }
@@ -426,12 +426,11 @@ table {
 .tabs .current-item {
   display: block;
   background-image: url('../images/header_image.jpg');
-  background-repeat: none;
   background-size: 750px 300px;
 }
 @media (max-width:500px) {
   .tabs .current-item {
-    background-size: 395px 300px;
+    background-size: 405px 300px;
   }
 }
 @media (max-width:486px) {
@@ -490,7 +489,7 @@ table {
   justify-content: center;
   align-content: center;
 }
-.tabs-links {
+.section .tabs-links {
   display: flex;
   background-color: #520d52;
 }

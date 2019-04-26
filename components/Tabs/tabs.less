@@ -5,71 +5,63 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  // @media @360px {
-  //   font-size: 2rem;
-  // }
   @media @400px {
     font-size: 2.3rem;
   }
 }
 
-//
+
 .tabs {
-  width: 50%;
-  margin-left: 370px;
-  @media @500px {
-    margin-left: 50px;
-    width: 80%;
-  }
-  @media @447px {
-    width: 81%;
-  }
-  @media @440px {
-    width: 82%;
-  }
-  @media @437px {
-    width: 83%;
-  }
-  @media @430px {
-    width: 84%;
-  }
-  @media @400px {
-    margin-left: 35px;
-}
-  // @media @360px {
-  //   margin-left: 40px;
-  //   width: 80%;
-  // }
-    .tabs-items-container {
-      width: 100%;
-      height: 300px;
-      display: flex;
-      justify-content: center;
+    width: 50%;
+    margin-left: 370px;
+    @media @500px {
+      margin-left: 50px;
+      width: 80%;
     }
-    .content-holder {
-      display: none; 
-      width: 100%;
-      padding: 40px 20px 0 20px;
-      .content-title {
-        text-align: center;
-        font-size: 2.4rem;
-        font-weight: bold;
-        color: #520D52;
-        margin-bottom: 10px;
-        @media @500px {
-          display: none;
-        }
-        
+    @media @447px {
+      width: 81%;
+    }
+    @media @440px {
+      width: 82%;
+    }
+    @media @437px {
+      width: 83%;
+    }
+    @media @430px {
+      width: 84%;
+    }
+    @media @400px {
+      margin-left: 35px;
+    }
+      .tabs-items-container {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
       }
-    }
+      .content-holder {
+        display: none; 
+        width: 100%;
+        padding: 40px 20px 0 20px;
+        .content-title {
+          text-align: center;
+          font-size: 2.4rem;
+          font-weight: bold;
+          color: #520D52;
+          margin-bottom: 10px;
+          @media @500px {
+            display: none;
+          }
+          
+        }
+      }
     .current-item {
       display: block;
       background-image: url('../images/header_image.jpg');
-      background-repeat: none;
       background-size: 750px 300px;
       
       @media @500px {
-        background-size: 395px 300px;
+        background-size: 405px 300px;
       }
       @media @486px {
         background-size: 381px 300px;
@@ -91,67 +83,72 @@
       }
       @media @400px {
         background-size: 330px 300px;
-    }
-    @media @392px {
+      }
+      @media @392px {
       background-size: 323px 300px;
+      }
+      @media @384px {
+      background-size: 317px 300px;
+      }
+      @media @354px {
+      background-size: 300px 300px;
+    }   
   }
-  @media @384px {
-    background-size: 317px 300px;
 }
-@media @354px {
-  background-size: 300px 300px;
-  
 
-}
-     
-    }
-  }
 
-  .section {
+
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-  }
-  
     .tabs-links {
       display: flex;
       background-color:rgb(82, 13, 82);
-    }
-  
-    .tabs-link {
-      padding: 20px 25px;
-      font-size: 2rem;
-      border: 3px solid #E7EBF7;
-      border-left: none;
       
-      background-color: rgb(82, 13, 82); 
-      color: white;
-      cursor: pointer;
-      &:hover {
-        background-color:rgb(143, 21, 143);
-      }
-      @media @500px {
-            font-size: 1.3rem;
-      }
-      @media @400px {
-        font-size: 1rem;
-  }
     }
+}
 
-    .current-tab {
+
+
+.tabs-link {
+    padding: 20px 25px;
+    font-size: 2rem;
+    border: 3px solid #E7EBF7;
+    border-left: none;
+    
+    background-color: rgb(82, 13, 82); 
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background-color:rgb(143, 21, 143);
+    }
+    @media @500px {
+          font-size: 1.3rem;
+    }
+    @media @400px {
+      font-size: 1rem;
+    }   
+}
+
+
+.current-tab {
       z-index: 2;
-      
       background-color: #E7EBF7;
       color:black;
       &:hover {
         background-color: rgb(143, 21, 143);
       }
-    }
+}
 
-    .tabs-link:first-child {
+
+
+.tabs-link:first-child {
       border-left: 3px solid #E7EBF7;
-    }
+}
+
+
   
 
   .tabs-content {
@@ -163,12 +160,10 @@
         width: 80%;
         font-size: 1.3rem;
       }
-      // @media @360px {
-      //   font-size: .9rem;
-      // }
   }
 
-  .btn-container .btbtn {
+
+.btn-container .btbtn {
     margin-top: 10px;
     padding: 10px;
-  }
+}
