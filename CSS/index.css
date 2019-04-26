@@ -175,6 +175,14 @@ img {
 header nav {
   padding-left: 0;
 }
+header nav .home-nav {
+  margin-left: 0;
+}
+@media (max-width: 500px) {
+  header nav {
+    padding-left: 114px;
+  }
+}
 @media (max-width: 500px) {
   header nav a {
     margin-left: 130px;
@@ -323,7 +331,7 @@ header .sidenav .closebtn {
 }
 header .menu {
   font-size: 3rem;
-  margin-left: 16px;
+  cursor: default;
 }
 nav {
   padding-top: 10px;
