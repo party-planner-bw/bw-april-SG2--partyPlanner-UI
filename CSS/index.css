@@ -126,6 +126,160 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 3rem;
+  padding-left: 1%;
+  font-family: 'Lato', sans-serif;
+}
+@media (max-width: 500px) {
+  h1 {
+    padding-left: 31%;
+  }
+}
+h2,
+h3 {
+  font-size: 3rem;
+  font-family: 'Lato', sans-serif;
+}
+@media (max-width: 500px) {
+  h2,
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+p {
+  font-size: 1.8rem;
+  font-family: 'Slabo 27px', serif;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.main-page {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header h1 {
+    padding-left: 33%;
+  }
+}
+header nav {
+  padding-left: 0;
+}
+header nav .home-nav {
+  margin-left: 0;
+}
+@media (max-width: 500px) {
+  header nav {
+    padding-left: 114px;
+  }
+}
+@media (max-width: 500px) {
+  header nav a {
+    margin-left: 130px;
+  }
+}
+.main-page {
+  background: #F4F4F4;
+}
+.members-header {
+  text-align: center;
+  padding: 60px 0;
+  font-size: 4rem;
+}
+.members {
+  display: flex;
+  padding-left: 2.5%;
+}
+@media (max-width: 500px) {
+  .members {
+    width: 106%;
+    padding-left: 4%;
+    flex-direction: column;
+  }
+}
+.members h3 {
+  text-align: center;
+  padding: 8px 0;
+}
+@media (max-width: 500px) {
+  .members h3 {
+    font-size: 4.5rem;
+    padding: 36px 0;
+  }
+}
+.members .shannon,
+.members .isaias,
+.members .destiny,
+.members .brennon,
+.members .lydia,
+.members .arkadiusz {
+  padding-right: 10%;
+  padding-bottom: 30%;
+}
+@media (max-width: 500px) {
+  .members .shannon,
+  .members .isaias,
+  .members .destiny,
+  .members .brennon,
+  .members .lydia,
+  .members .arkadiusz {
+    padding-bottom: 6%;
+  }
+}
+.members .shannon h4,
+.members .isaias h4,
+.members .destiny h4,
+.members .brennon h4,
+.members .lydia h4,
+.members .arkadiusz h4 {
+  font-size: 3rem;
+  padding: 9px 0;
+  text-align: center;
+}
+.members .shannon p,
+.members .isaias p,
+.members .destiny p,
+.members .brennon p,
+.members .lydia p,
+.members .arkadiusz p {
+  line-height: 2.4rem;
+  padding-bottom: 3px;
+}
+.members .shannon button,
+.members .isaias button,
+.members .destiny button,
+.members .brennon button,
+.members .lydia button,
+.members .arkadiusz button {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 15%;
+  border-radius: 5px;
+  border: 1px solid #242424;
+  color: white;
+  background-color: #242424;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+}
+.members .shannon button:hover,
+.members .isaias button:hover,
+.members .destiny button:hover,
+.members .brennon button:hover,
+.members .lydia button:hover,
+.members .arkadiusz button:hover {
+  background: white;
+  color: #242424;
+}
 header {
   display: flex;
   justify-content: space-around;
@@ -175,7 +329,7 @@ header .sidenav .closebtn {
   font-size: 36px;
   margin-left: 50px;
 }
-header .sidenav .menu {
+header .menu {
   font-size: 3rem;
   cursor: pointer;
 }
@@ -228,29 +382,6 @@ nav a {
     margin: 18px 0;
     height: 64px;
     width: 90%;
-  }
-}
-.bottom-nav {
-  display: flex;
-  justify-content: center;
-  padding: 51px 0;
-  border-top: 1px solid lightgrey;
-}
-@media (max-width: 500px) {
-  .bottom-nav {
-    margin-right: 9%;
-  }
-}
-.bottom-nav a {
-  margin-left: 61px;
-  font-size: 2rem;
-  text-decoration: none;
-  color: black;
-  font-family: 'Lato', sans-serif;
-}
-@media (max-width: 500px) {
-  .bottom-nav a {
-    font-size: 2.6;
   }
 }
 .top-content {
@@ -494,116 +625,26 @@ nav a {
   background: white;
   color: #242424;
 }
-@media (max-width: 500px) {
-  header h1 {
-    padding-left: 33%;
-  }
-}
-header nav {
-  padding-left: 0;
-}
-header nav .home-nav {
-  margin-left: 0;
-}
-@media (max-width: 500px) {
-  header nav {
-    padding-left: 114px;
-  }
-}
-@media (max-width: 500px) {
-  header nav a {
-    margin-left: 130px;
-  }
-}
-.main-page {
-  background: #F4F4F4;
-}
-.members-header {
-  text-align: center;
-  padding: 60px 0;
-  font-size: 4rem;
-}
-.members {
+.bottom-nav {
   display: flex;
-  padding-left: 2.5%;
+  justify-content: center;
+  padding: 51px 0;
+  border-top: 1px solid lightgrey;
 }
 @media (max-width: 500px) {
-  .members {
-    width: 106%;
-    padding-left: 4%;
-    flex-direction: column;
+  .bottom-nav {
+    margin-right: 9%;
   }
 }
-.members h3 {
-  text-align: center;
-  padding: 8px 0;
-}
-@media (max-width: 500px) {
-  .members h3 {
-    font-size: 4.5rem;
-    padding: 36px 0;
-  }
-}
-.members .shannon,
-.members .isaias,
-.members .destiny,
-.members .brennon,
-.members .lydia,
-.members .arkadiusz {
-  padding-right: 10%;
-  padding-bottom: 30%;
-}
-@media (max-width: 500px) {
-  .members .shannon,
-  .members .isaias,
-  .members .destiny,
-  .members .brennon,
-  .members .lydia,
-  .members .arkadiusz {
-    padding-bottom: 6%;
-  }
-}
-.members .shannon h4,
-.members .isaias h4,
-.members .destiny h4,
-.members .brennon h4,
-.members .lydia h4,
-.members .arkadiusz h4 {
-  font-size: 3rem;
-  padding: 9px 0;
-  text-align: center;
-}
-.members .shannon p,
-.members .isaias p,
-.members .destiny p,
-.members .brennon p,
-.members .lydia p,
-.members .arkadiusz p {
-  line-height: 2.4rem;
-  padding-bottom: 3px;
-}
-.members .shannon button,
-.members .isaias button,
-.members .destiny button,
-.members .brennon button,
-.members .lydia button,
-.members .arkadiusz button {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 15%;
-  border-radius: 5px;
-  border: 1px solid #242424;
-  color: white;
-  background-color: #242424;
+.bottom-nav a {
+  margin-left: 61px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
   font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
 }
-.members .shannon button:hover,
-.members .isaias button:hover,
-.members .destiny button:hover,
-.members .brennon button:hover,
-.members .lydia button:hover,
-.members .arkadiusz button:hover {
-  background: white;
-  color: #242424;
+@media (max-width: 500px) {
+  .bottom-nav a {
+    font-size: 2.6;
+  }
 }
