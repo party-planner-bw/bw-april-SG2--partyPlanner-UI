@@ -151,7 +151,7 @@ h3 {
 @media (max-width: 500px) {
   h2,
   h3 {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
   }
 }
 p {
@@ -196,7 +196,7 @@ header nav a {
 }
 @media (max-width: 500px) {
   header nav a {
-    margin-left: 50px;
+    margin-left: 78px;
   }
 }
 header .top-btns {
@@ -342,7 +342,8 @@ header .top-btns button:hover {
 }
 @media (max-width: 500px) {
   .features .feat-one .one-txt h3 {
-    padding-left: 30%;
+    padding-left: 3%;
+    font-size: 2.5rem;
   }
 }
 .features .feat-one .one-txt p {
@@ -446,8 +447,18 @@ header .top-btns button:hover {
   padding-bottom: 18px;
   padding-left: 6%;
 }
+@media (max-width: 500px) {
+  .features .feat-four .four-txt h3 {
+    padding-left: 0%;
+  }
+}
 .features .feat-four .four-txt p {
   line-height: 27px;
+}
+@media (max-width: 500px) {
+  .features .feat-four .four-txt p {
+    padding-bottom: 18px;
+  }
 }
 .features .feat-btn {
   display: block;
