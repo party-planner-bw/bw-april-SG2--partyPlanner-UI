@@ -1,0 +1,177 @@
+.test {
+  border: 2px solid red;
+}
+html {
+  font-size: 62.5%;
+}
+html body {
+  box-sizing: border-box;
+  min-width: 300px;
+  margin: 0;
+}
+html body .page_container {
+  background-image: url('../images/bg_image.jpg');
+}
+@media (max-width:500px) {
+  html body .page_container {
+    background-image: none;
+    background-color: #E7EBF7;
+  }
+}
+.about-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  .about-header {
+    max-width: 500px;
+  }
+}
+.about-header .header_img {
+  border: 10px solid #520d52;
+  border-top: none;
+  justify-content: center;
+  height: 800px;
+  width: 70%;
+  max-width: 100%;
+}
+@media (max-width:500px) {
+  .about-header .header_img {
+    display: none;
+  }
+}
+.about-header .about_section {
+  display: flex;
+  align-content: space-around;
+  position: absolute;
+  margin-top: 120px;
+  width: 55%;
+  height: 550px;
+}
+@media (max-width:500px) {
+  .about-header .about_section {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+}
+.about-header .about_section .team1_img {
+  border: 4px outset #520D52;
+  border-radius: 10%;
+  height: 150px;
+}
+@media (max-width:500px) {
+  .about-header .about_section .team1_img {
+    height: 100px;
+  }
+}
+.about-header .about_section .team2_img {
+  border: 4px outset #520D52;
+  border-radius: 10%;
+  height: 150px;
+}
+@media (max-width:500px) {
+  .about-header .about_section .team2_img {
+    height: 100px;
+  }
+}
+.person {
+  display: flex;
+  margin: 0 0 45px 0;
+  text-align: center;
+}
+.person p {
+  font-size: 2rem;
+  margin-top: 60px;
+}
+.person p span {
+  font-weight: bolder;
+}
+@media (max-width:500px) {
+  .person p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+}
+@media (max-width:428px) {
+  .person p {
+    font-size: 0.7rem;
+  }
+}
+.arkadiusz {
+  margin-right: -10px;
+  padding-left: 7px;
+}
+.brennon {
+  margin-left: 15px;
+  margin-right: -80px;
+}
+@media (max-width:500px) {
+  .brennon {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}
+@media (max-width:500px) {
+  .destiny {
+    margin-left: 10px;
+  }
+}
+.isaias {
+  margin-left: -30px;
+}
+@media (max-width:500px) {
+  .isaias {
+    padding-left: 15px;
+  }
+}
+.lydia {
+  margin-right: 20px;
+  margin-left: -80px;
+}
+@media (max-width:500px) {
+  .lydia {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}
+.shannon {
+  margin-left: -30px;
+}
+@media (max-width:500px) {
+  .shannon {
+    margin-left: 0;
+  }
+}
+.left-side .person {
+  flex-direction: row-reverse;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+@media (max-width:500px) {
+  .left-side .person {
+    margin: -150px 30px 0 60px;
+    position: relative;
+  }
+}
+.right-side .person {
+  margin-left: 180px;
+}
+@media (max-width:500px) {
+  .right-side .person {
+    margin: -150px 30px 0 60px;
+    position: relative;
+  }
+}
+@media (max-width:500px) {
+  .about_footer {
+    margin-top: 1200px;
+  }
+}
+@media (max-width:500px) {
+  .card_img {
+    position: relative;
+    visibility: visible;
+    height: 200px;
+  }
+}
